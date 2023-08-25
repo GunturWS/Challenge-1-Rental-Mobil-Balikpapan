@@ -44,7 +44,7 @@ html {
   -o-tab-size: 4;
      tab-size: 4;
   /* 3 */
-  font-family: Helvetica,Arial, sans-serif;
+  font-family: Helvetica;
   /* 4 */
   font-feature-settings: normal;
   /* 5 */
@@ -2783,7 +2783,7 @@ input:checked + .toggle-bg {
 }
 
 .font-sans {
-  font-family: Helvetica,Arial, sans-serif;
+  font-family: Helvetica;
 }
 
 .text-2xl {
