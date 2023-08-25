@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Car Rental</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="/dist/output.css" />
+  </head>
+  <body>
+    <!-- navbar -->
+    <!-- Logo -->
+
+    <!-- <nav class="bg-semi-putih">
+      <div class="container max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4 top-0 left-0 z-10 sticky">
+        <a href="http://127.0.0.1:5500/index.html" class="flex items-center">
+          <img src="/asset/logo.png" class="h-8 mr-3" alt="Binar Logo" />
+        </a>
+        <button
+          data-collapse-toggle="navbar-default"
+          type="button"
+          class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2"
+          aria-controls="navbar-default"
+          aria-expanded="false"
+        >
+          <span class="sr-only">Open main menu</span>
+          <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+            <path d="M16.975 11H10V4.025a1 1 0 0 0-1.066-.998 8.5 8.5 0 1 0 9.039 9.039.999.999 0 0 0-1-1.066h.002Z" />
+            <path d="M12.5 0c-.157 0-.311.01-.565.027A1 1 0 0 0 11 1.02V10h8.975a1 1 0 0 0 1-.935c.013-.188.028-.374.028-.565A8.51 8.51 0 0 0 12.5 0Z" />
+          </svg>
+        </button>
+        <div class="hidden w-1/2 md:block md:w-auto" id="navbar-default">
+          <ul class="font-medium flex flex-col p-4 md:p-0 mt-4 border rounded-lg md:flex-row md:space-x-8 md:mt-0 md:border-0">
+            <li class="font-Helvetica text-sm py-2">
+              <a href="" alt="">Our Service</a>
+            </li>
+            <li class="font-Helvetica text-sm py-2">
+              <a href="" alt="">Why Us</a>
+            </li>
+            <li class="font-Helvetica text-sm py-2">
+              <a href="" alt="">Testimonial</a>
+            </li>
+            <li class="font-Helvetica text-sm py-2">
+              <a href="" alt="">FAQ</a>
+            </li>
+            <div href="#" class="w-20 h-9 px-3 py-2 bg-Hijau muda rounded-sm border justify-center items-center">
+              <div class="text-white text-sm font-Hevatical font-bold leading-tight">Register</div>
+            </div>
+          </ul>
+        </div>
+      </div>
+    </nav> -->
+    <!-- navbar end -->
+    <!-- Header Start -->
+    <header class="absolute top-0 left-0 z-10 flex w-full items-center bg-transparent">
+      <div class="container">
+        <div class="relative flex items-center justify-between">
+          <div class="px-4">
+            <a href="#home" class="block py-6 px-4 text-lg font-bold text-primary">
+              <img src="/asset/logo.png" class="h-8 mr-3" alt="Binar Logo" />
+            </a>
+          </div>
+          <div class="flex items-center px-4">
+            <button id="hamburger" name="hamburger" type="button" class="absolute right-4 block lg:hidden">
+              <span class="hamburger-line origin-top-left transition duration-300 ease-in-out"></span>
+              <span class="hamburger-line transition duration-300 ease-in-out"></span>
+              <span class="hamburger-line origin-bottom-left transition duration-300 ease-in-out"></span>
+            </button>
+
+            <nav
+              id="nav-menu"
+              class="absolute right-0 top-0 hidden h-screen w-full max-w-[250px] rounded-lg bg-white py-5 shadow-lg dark:bg-dark dark:shadow-slate-500 lg:static lg:block lg:max-w-full lg:rounded-none lg:bg-transparent lg:shadow-none lg:dark:bg-transparent"
+            >
+              <div></div>
+              <ul class="block lg:flex">
+                <li class="font-Helvetica text-sm py-2 mx-8">
+                  <a href="" alt="">Our Service</a>
+                </li>
+                <li class="group"></li>
+                <li class="font-Helvetica text-sm py-2 mx-8">
+                  <a href="" alt="">Why Us</a>
+                </li>
+                <li class="font-Helvetica text-sm py-2 mx-8">
+                  <a href="" alt="">Testimonial</a>
+                </li>
+                <li class="font-Helvetica text-sm py-2 mx-8">
+                  <a href="" alt="">FAQ</a>
+                </li>
+                <div href="#" class="w-20 h-9 px-3 mx-8 flex py-2 bg-Hijau muda rounded-sm border justify-center items-center">
+                  <div class="text-white text-sm font-Hevatical font-bold leading-tight">Register</div>
+                </div>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- Header End -->
+    <!-- home -->
+    <section class="mx-auto">
+      <div class="pt-20 bg-semi-putih" id="home">
+        <div class="container mx-auto flex flex-wrap px-6">
+          <div class="self-center w-full px-4 lg:w-1/2">
+            <h1 class="text-4xl font-bold font-Helvetica">Sewa & Rental Mobil Terbaik di kawasan (Lokasimu)</h1>
+            <p class="mt-4 max-w-lg font-Helvetica">Selamat datang di Binar Car Rental. Kami menyediakan mobil kualitas terbaik dengan harga terjangkau. Selalu siap melayani kebutuhanmu untuk sewa mobil selama 24 jam.</p>
+            <div class="w-30 h-9 mt-4 px-2 py-3 bg-Hijau muda rounded-sm border justify-center items-center inline-flex">
+              <a href="#" class="text-white font-bold leading-tight">Mulai Sewa Mobil</a>
+            </div>
+          </div>
+          <div class="w-full px-4 self-center lg:w-1/2 max-w-full ml-auto">
+            <div class="mt-15 lg:mt-9"></div>
+            <img class="max-w-full mx-auto" src="/asset/img_car.png" alt="mercedes" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Home end -->
+
+    <!-- Our Services -->
+    <section class="mx-auto">
+      <div class="container pt-[206] mx-auto">
+        <div class="flex flex-wrap gap-6 lg:flex-nowrap">
+          <div class="flex justify-center w-full px-6 mt-12 lg:w-1/2">
+            <img src="/asset/img_service11.png" alt="Service" />
+          </div>
+          <div class="flex self-center gap-4 w-full px-4 lg:w-1/2">
+            <div class="flex-flex-col gap-4">
+              <div class="text-2xl font-bold leading-9 w-3/4">Best Car Rental for any kind of trip in (Lokasimu)!</div>
+              <div class="text-black mt-4 text-sm font-light leading-tight text-justify">
+                Sewa mobil di (Lokasimu) bersama Binar Car Rental jaminan harga lebih murah dibandingkan yang lain, kondisi mobil baru, serta kualitas pelayanan terbaik untuk perjalanan wisata, bisnis, wedding, meeting, dll.
+              </div>
+              <div class="flex flex-col mt-4 gap-4">
+                <div class="flex items-center gap-4">
+                  <div class="mr-1">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <circle cx="12" cy="12" r="12" fill="#CFD4ED" />
+                      <path d="M17.3333 8L9.99996 15.3333L6.66663 12" stroke="#0D28A6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                  </div>
+                  <div class="text-black font-sans text-sm leading-tight">Sewa Mobil Dengan Supir di Bali 12 Jam</div>
+                </div>
+                <div class="flex items-center gap-4">
+                  <div class="mr-1">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <circle cx="12" cy="12" r="12" fill="#CFD4ED" />
+                      <path d="M17.3333 8L9.99996 15.3333L6.66663 12" stroke="#0D28A6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                  </div>
+                  <div class="text-black font-sans text-sm leading-tight">Sewa Mobil Lepas Kunci di Bali 24 Jam</div>
+                </div>
+                <div class="flex items-center gap-4">
+                  <div class="mr-1">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <circle cx="12" cy="12" r="12" fill="#CFD4ED" />
+                      <path d="M17.3333 8L9.99996 15.3333L6.66663 12" stroke="#0D28A6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                  </div>
+                  <div class="text-black font-sans text-sm leading-tight">Sewa Mobil Jangka Panjang Bulanan</div>
+                </div>
+                <div class="flex items-center gap-4">
+                  <div class="mr-1">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <circle cx="12" cy="12" r="12" fill="#CFD4ED" />
+                      <path d="M17.3333 8L9.99996 15.3333L6.66663 12" stroke="#0D28A6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                  </div>
+                  <div class="text-black font-sans text-sm leading-tight">Gratis Antar - Jemput Mobil di Bandara</div>
+                </div>
+                <div class="flex items-center gap-4">
+                  <div class="mr-1">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <circle cx="12" cy="12" r="12" fill="#CFD4ED" />
+                      <path d="M17.3333 8L9.99996 15.3333L6.66663 12" stroke="#0D28A6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                  </div>
+                  <div class="text-black font-sans text-sm leading-tight">Layanan Airport Transfer / Drop In Out</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Our Service end -->
+
+    <!-- WHY us -->
+    <section class="mx-auto bg-white flex-justify-center">
+      <div class="container mx-auto" id="Why Us?">
+        <div class="flex flex-col px-6">
+          <div class="text-left mt-20 w-full px-4 lg:w-1/2">
+            <div>
+              <h1 class="font-Helvetica text-2xl font-bold">Why Us ?</h1>
+            </div>
+            <div class="mt-4">
+              <p>Kenapa harus pilih Binar Car Rental?</p>
+            </div>
+          </div>
+          <div class="mt-4 flex flex-wrap px-4 gap-4 lg:flex-nowrap">
+            <!-- CARD 1 -->
+            <div class="p-6 mx-auto bg-white rounded-xl lg:w-1/4 w-full border border-stone-300">
+              <div class="shrink-0">
+                <img class="h-8 w-8 font sans font-" src="/asset/icon_jempol.svg" alt="Like" />
+              </div>
+              <div>
+                <div class="mt-4 flex-justify-end font-sans font-bold text-black">Mobil Lengkap</div>
+                <p class="text-black font-helvetica mt-4">Tersedia banyak pilihan mobil, kondisi masih baru, bersih dan terawat</p>
+              </div>
+            </div>
+            <!-- CARD 1 end -->
+
+            <!-- CARD 2 -->
+            <div class="p-6 mx-auto bg-white rounded-xl lg:w-1/4 w-full border border-stone-300">
+              <div class="shrink-0">
+                <img class="h-8 w-8" src="/asset/icon_price.svg" alt="price" />
+              </div>
+              <div>
+                <div class="mt-4 flex-justify-end font-Helvetica font-bold text-black">Harga Murah</div>
+                <p class="text-black font-helvetica mt-4">Harga murah dan bersaing, bisa bandingkan harga kami dengan rental mobil lain</p>
+              </div>
+            </div>
+            <!-- CARD 2 end -->
+
+            <!-- CARD 3 -->
+            <div class="p-6 mx-auto bg-white rounded-xl lg:w-1/4 w-full border border-stone-300">
+              <div class="shrink-0">
+                <img class="h-8 w-8" src="/asset/icon_24hrs.svg" alt="24hrs" />
+              </div>
+              <div>
+                <div class="mt-4 flex-justify-end font-Helvetica font-bold text-black">Layanan 24 Jam</div>
+                <p class="text-black font-helvetica mt-4">selama 24 jam nonstop. Kami juga tersedia di akhir minggu</p>
+              </div>
+            </div>
+            <!-- CARD 3 end -->
+
+            <!-- CARD 4 -->
+            <div class="p-6 mx-auto bg-white rounded-xl lg:w-1/4 w-full border border-stone-300">
+              <div class="shrink-0">
+                <img class="h-8 w-8" src="/asset/icon_professional.svg" alt="professional" />
+              </div>
+              <div>
+                <div class="mt-4 flex-justify-end font-Helvetica font-bold text-black">Sopir Profesional</div>
+                <p class="text-black font-helvetica mt-4">Sopir yang profesional, berpengalaman, jujur, ramah dan selalu tepat waktu</p>
+              </div>
+              <!-- CARD 4 end -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- WHY us end -->
+
+    <!-- Testimonial -->
+    <section class="mx-auto bg-white justify-center">
+      <div class="container mx-auto" id="Testimonial">
+        <div class="flex flex-col px-6">
+          <div class="mt-20 justify-center items-center">
+            <div class="font-Helvetica text-2xl font-bold text-center">
+              <h1>Testimonial</h1>
+            </div>
+            <p class="text-center">Beberapa adalah rating dari pelanggan-pelanggan yang menggunakan jasa kami</p>
+          </div>
+          <div class="flex flex-wrap gap-4 lg:flex-nowrap">
+            <!-- testimonial 1 -->
+            <div class="p-4 mt-6 mx-auto bg-semi-putih rounded-xl lg:w-1/2 w-full border border-stone-300">
+              <div class="">
+                <div class="flex flex-wrap lg:flex-nowrap lg:gap-4">
+                  <div class="flex justify-center w-full items-center lg:w-[25%]">
+                    <img class="flex justify-center lg:w-[70px] rounded-full" src="/asset/foto 1.svg" alt="Rate1" />
+                  </div>
+                  <div class="mt-4 flex flex-col lg:w-[90%] w-full justify-center">
+                    <img class="w-20 h-4 justify-center items-center" src="/asset/star.svg" alt="" />
+                    <div class="text-sm font mt-2 W-16">
+                      “Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod”
+                    </div>
+                    <p class="font-bold font-Helvetica mt-2">John Dee 32, Bromo</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- testimonial 1 end -->
+
+            <!-- testimonial 2 -->
+            <div class="hidden lg:block p-4 mt-6 mx-auto bg-semi-putih rounded-xl lg:w-1/2 w-full border border-stone-300">
+              <div class="">
+                <div class="flex flex-wrap lg:flex-nowrap lg:gap-4">
+                  <div class="flex justify-center w-full items-center lg:w-[25%]">
+                    <img class="flex justify-center lg:w-[70px] rounded-full" src="/asset/foto 1.svg" alt="Rate1" />
+                  </div>
+                  <div class="mt-4 flex flex-col lg:w-[90%] w-full justify-center">
+                    <img class="w-20 h-4 justify-center items-start" src="/asset/star.svg" alt="" />
+                    <div class="text-sm font mt-2 W-16">
+                      “Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod”
+                    </div>
+                    <p class="font-bold font-Helvetica mt-2">John Dee 32, Bromo</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- testimonial 2 end -->
+
+            <!-- testimonial 3 -->
+            <div class="hidden lg:block p-4 mt-6 mx-auto bg-semi-putih rounded-xl lg:w-1/2 w-full border border-stone-300">
+              <div class="">
+                <div class="flex flex-wrap lg:flex-nowrap lg:gap-4">
+                  <div class="flex justify-center w-full items-center lg:w-[25%]">
+                    <img class="flex justify-center lg:w-[70px] rounded-full" src="/asset/foto 2.svg" alt="Rate1" />
+                  </div>
+                  <div class="mt-4 flex flex-col lg:w-[90%] w-full justify-center">
+                    <img class="w-20 h-4 justify-center items-start" src="/asset/star.svg" alt="" />
+                    <div class="text-sm font mt-2 W-16">
+                      “Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod”
+                    </div>
+                    <p class="font-bold font-Helvetica mt-2">John Dee 32, Bromo</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- testimonial 3 end -->
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Testimonial end-->
+
+    <!-- CTA Banner -->
+    <section class="mx-auto justify-center">
+      <div class="container mx-auto" id="CTA Banner">
+        <div class="flex flex-col">
+          <div class="mt-20 justify-center w-full px-6 lg:px-[136px]">
+            <div class="lg:flex-col border boborder-gray-400 bg-Biru shadow-md mx-auto p-4 rounded-lg lg:py-[64px]">
+              <div class="font-Helvetica text-4xl font-bold text-center text-white">
+                <h2>Sewa Mobil di Balikpapan Sekarang</h2>
+              </div>
+              <div class="mt-4 text-center font-Helvetica text-white">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+              </div>
+              <div class="flex justify-center">
+                <div class="w-30 h-9 mt-20 px-2 py-3 bg-Hijau muda text-center items-center inline-flex">
+                  <a href="#" class="text-white font-bold">Mulai Sewa Mobil</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- CTA Banner end-->
+
+    <!-- FAQ -->
+    <section class="mx-auto bg-white">
+      <div class="container mx-auto" id="FAQ">
+        <div class="flex flex-wrap lg:flex-nowrap mt-20">
+          <div class="flex flex-col gap-4 w-full lg:w-[40%]">
+            <h1 class="flex justify-center font-bold font-sans txt-2xl lg:justify-start">Frequently Asked Question</h1>
+            <p class="flex justify-center font-sans lg:justify-start">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+          </div>
+          <div class="flex flex-col px-4 w-full lg:w-[60%]">
+            <div id="accordion-collapse" data-accordion="collapse" class="px-4 w-full">
+              <!-- dropdown 1 -->
+              <h2 id="accordion-collapse-heading-1" class="mt-4 w-full">
+                <button
+                  type="button"
+                  class="flex items-center justify-between w-full p-5 font-medium text-left text-gray-500 border border-gray-200 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-800 dark:border-gray-700 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800"
+                  data-accordion-target="#accordion-collapse-body-1"
+                  aria-expanded="false"
+                  aria-controls="accordion-collapse-body-1"
+                >
+                  <span>Bagaimana jika terjadi kecelakaan</span>
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M6 9L12 15L18 9" stroke="#222222" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                  </svg>
+                </button>
+              </h2>
+              <div id="accordion-collapse-body-1" class="hidden" aria-labelledby="accordion-collapse-heading-5">
+                <div class="p-5 border border-t-0 border-gray-200 dark:border-gray-700">
+                  <p class="mb-2 text-gray-500 dark:text-gray-400">
+                    The main difference is that the core components from Flowbite are open source under the MIT license, whereas Tailwind UI is a paid product. Another difference is that Flowbite relies on smaller and standalone components,
+                    whereas Tailwind UI offers sections of pages.
+                  </p>
+                  <p class="mb-2 text-gray-500 dark:text-gray-400">However, we actually recommend using both Flowbite, Flowbite Pro, and even Tailwind UI as there is no technical reason stopping you from using the best of two worlds.</p>
+                  <p class="mb-2 text-gray-500 dark:text-gray-400">Learn more about these technologies:</p>
+                  <ul class="pl-5 text-gray-500 list-disc dark:text-gray-400"></ul>
+                </div>
+              </div>
+              <!-- dropdown 1 end -->
+
+              <!-- dropdown 2 -->
+              <h2 id="accordion-collapse-heading-2" class="mt-4">
+                <button
+                  type="button"
+                  class="flex items-center justify-between w-full p-5 font-medium text-left text-gray-500 border border-gray-200 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-800 dark:border-gray-700 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800"
+                  data-accordion-target="#accordion-collapse-body-2"
+                  aria-expanded="false"
+                  aria-controls="accordion-collapse-body-5"
+                >
+                  <span>Bagaimana jika terjadi kecelakaan</span>
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M6 9L12 15L18 9" stroke="#222222" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                  </svg>
+                </button>
+              </h2>
+              <div id="accordion-collapse-body-2" class="hidden" aria-labelledby="accordion-collapse-heading-5">
+                <div class="p-5 border border-t-0 border-gray-200 dark:border-gray-700">
+                  <p class="mb-2 text-gray-500 dark:text-gray-400">The main difference is that the core components from Flowbite are open source under the MIT license, whereas Tailwind UI is a paid product.</p>
+                  <p class="mb-2 text-gray-500 dark:text-gray-400">However, we actually recommend using both Flowbite, Flowbite Pro, and even Tailwind UI as there is no technical reason stopping you from using the best of two worlds.</p>
+                  <p class="mb-2 text-gray-500 dark:text-gray-400">Learn more about these technologies:</p>
+                  <ul class="pl-5 text-gray-500 list-disc dark:text-gray-400"></ul>
+                </div>
+              </div>
+
+              <!-- dropdown 3 -->
+              <h2 id="accordion-collapse-heading-3" class="mt-4">
+                <button
+                  type="button"
+                  class="flex items-center justify-between w-full p-5 font-medium text-left text-gray-500 border border-gray-200 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-800 dark:border-gray-700 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800"
+                  data-accordion-target="#accordion-collapse-body-3"
+                  aria-expanded="false"
+                  aria-controls="accordion-collapse-body-3"
+                >
+                  <span>Berapa hari sebelumnya sabaiknya booking sewa mobil?</span>
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M6 9L12 15L18 9" stroke="#222222" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                  </svg>
+                </button>
+              </h2>
+              <div id="accordion-collapse-body-3" class="hidden" aria-labelledby="accordion-collapse-heading-3">
+                <div class="p-5 border border-t-0 border-gray-200 dark:border-gray-700">
+                  <p class="mb-2 text-gray-500 dark:text-gray-400">The main difference is that the core components from Flowbite are open source under the MIT license, whereas Tailwind UI is a paid product.</p>
+                  <p class="mb-2 text-gray-500 dark:text-gray-400">However, we actually recommend using both Flowbite, Flowbite Pro, and even Tailwind UI as there is no technical reason stopping you from using the best of two worlds.</p>
+                  <p class="mb-2 text-gray-500 dark:text-gray-400">Learn more about these technologies:</p>
+                  <ul class="pl-5 text-gray-500 list-disc dark:text-gray-400"></ul>
+                </div>
+              </div>
+
+              <!-- dropdown 4 -->
+              <h2 id="accordion-collapse-heading-4" class="mt-4">
+                <button
+                  type="button"
+                  class="flex items-center justify-between w-full p-5 font-medium text-left text-gray-500 border border-gray-200 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-800 dark:border-gray-700 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800"
+                  data-accordion-target="#accordion-collapse-body-4"
+                  aria-expanded="false"
+                  aria-controls="accordion-collapse-body-4"
+                >
+                  <span>Apakah Ada biaya antar-jemput?</span>
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M6 9L12 15L18 9" stroke="#222222" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                  </svg>
+                </button>
+              </h2>
+              <div id="accordion-collapse-body-4" class="hidden" aria-labelledby="accordion-collapse-heading-4">
+                <div class="p-5 border border-t-0 border-gray-200 dark:border-gray-700">
+                  <p class="mb-2 text-gray-500 dark:text-gray-400">
+                    The main difference is that the core components from Flowbite are open source under the MIT license, whereas Tailwind UI is a paid product. Another difference is that Flowbite relies on smaller and standalone components,
+                    whereas Tailwind UI offers sections of pages.
+                  </p>
+                  <p class="mb-2 text-gray-500 dark:text-gray-400">However, we actually recommend using both Flowbite, Flowbite Pro, and even Tailwind UI as there is no technical reason stopping you from using the best of two worlds.</p>
+                  <p class="mb-2 text-gray-500 dark:text-gray-400">Learn more about these technologies:</p>
+                  <ul class="pl-5 text-gray-500 list-disc dark:text-gray-400"></ul>
+                </div>
+              </div>
+
+              <!-- dropdown 5 -->
+              <h2 id="accordion-collapse-heading-5" class="mt-4">
+                <button
+                  type="button"
+                  class="flex items-center justify-between w-full p-5 font-medium text-left text-gray-500 border border-gray-200 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-800 dark:border-gray-700 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800"
+                  data-accordion-target="#accordion-collapse-body-5"
+                  aria-expanded="false"
+                  aria-controls="accordion-collapse-body-5"
+                >
+                  <span>Bagaimana jika terjadi kecelakaan</span>
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M6 9L12 15L18 9" stroke="#222222" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                  </svg>
+                </button>
+              </h2>
+              <div id="accordion-collapse-body-5" class="hidden" aria-labelledby="accordion-collapse-heading-5">
+                <div class="p-5 border border-t-0 border-gray-200 dark:border-gray-700">
+                  <p class="mb-2 text-gray-500 dark:text-gray-400">
+                    The main difference is that the core components from Flowbite are open source under the MIT license, whereas Tailwind UI is a paid product. Another difference is that Flowbite relies on smaller and standalone components,
+                    whereas Tailwind UI offers sections of pages.
+                  </p>
+                  <p class="mb-2 text-gray-500 dark:text-gray-400">However, we actually recommend using both Flowbite, Flowbite Pro, and even Tailwind UI as there is no technical reason stopping you from using the best of two worlds.</p>
+                  <p class="mb-2 text-gray-500 dark:text-gray-400">Learn more about these technologies:</p>
+                  <ul class="pl-5 text-gray-500 list-disc dark:text-gray-400"></ul>
+                </div>
+              </div>
+              <!-- dropdown 5 end -->
+            </div>
+          </div>
+          <!-- <div class="flex self-center lg:w-[60%]">
+            <div class="flex flex-col w-full">
+              <div class="flex self-center gap-4 w-full px-4">
+                <div class="w-full lg:gap-4 p-4"> -->
+          <!-- <div class="relative flex p-4 items-center">
+                    <button class="relative flex justify-center items-center bg-white border focus:outline-none shadow text-gray-600 rounded focus:ring-gray-200">
+                      <p class="px-4">Apa saja syarat yang dibutuhkan?</p>
+                      <span class="bporder-l p-2 hover:bg-gray-100">
+                        <svg width="30" height="30" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M6 9L12 15L18 9" stroke="#222222" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                      </span>
+                      <div class="absolute hidden"></div>
+                    </button>
+                  </div> -->
+          <!-- <div class="relative flex p-4 items-center">
+                    <button class="relative flex justify-center items-center bg-white border focus:outline-none shadow text-gray-600 rounded focus:ring-gray-200">
+                      <p class="px-4">Apa saja syarat yang dibutuhkan?</p>
+                      <span class="bporder-l p-2 hover:bg-gray-100">
+                        <svg width="30" height="30" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M6 9L12 15L18 9" stroke="#222222" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                      </span>
+                      <div class="absolute hidden"></div>
+                    </button>
+                  </div> -->
+          <!-- <div class="relative flex p-4 items-center">
+                    <button class="relative flex justify-center items-center bg-white border focus:outline-none shadow text-gray-600 rounded focus:ring-gray-200">
+                      <p class="px-4">Apa saja syarat yang dibutuhkan?</p>
+                      <span class="bporder-l p-2 hover:bg-gray-100">
+                        <svg width="30" height="30" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M6 9L12 15L18 9" stroke="#222222" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                      </span>
+                      <div class="absolute hidden"></div>
+                    </button>
+                  </div>
+                  <div class="relative flex p-4 items-center">
+                    <button class="relative flex justify-center items-center bg-white border focus:outline-none shadow text-gray-600 rounded focus:ring-gray-200">
+                      <p class="px-4">Apa saja syarat yang dibutuhkan?</p>
+                      <span class="bporder-l p-2 hover:bg-gray-100">
+                        <svg width="30" height="30" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M6 9L12 15L18 9" stroke="#222222" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                      </span>
+                      <div class="absolute hidden"></div>
+                    </button>
+                  </div>
+                  <div class="relative flex p-4 items-center">
+                    <button class="relative flex justify-center items-center bg-white border focus:outline-none shadow text-gray-600 rounded focus:ring-gray-200">
+                      <p class="px-4">Apa saja syarat yang dibutuhkan?</p>
+                      <span class="bporder-l p-2 hover:bg-gray-100">
+                        <svg width="30" height="30" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M6 9L12 15L18 9" stroke="#222222" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                      </span>
+                      <div class="absolute hidden"></div>
+                    </button>
+                  </div> -->
+          <!-- </div>
+              </div>
+            </div> -->
+          <!-- </div> -->
+        </div>
+      </div>
+    </section>
+    <!-- FAQ -->
+
+    <!-- FOOTER -->
+    <footer class="mx-auto bg-white">
+      <div class="container mx-auto" id="Footer">
+        <div class="flex flex-wrap gap-6 lg:flex-nowrap mt-20">
+          <div class="flex flex-col text-sm p-4">
+            <div>
+              <h2 class="text-black text-sm font-Helvetica leading-tight">Jalan Suroyo No. 161 Mayangan Kota Probolonggo 672000</h2>
+            </div>
+            <div class="mt-4 hover:underline">
+              <a href="#" class="text-black text-sm font-Helvetica leading-tight">binarcarrental@gmail.com</a>
+            </div>
+            <div class="mt-4 hover:underline">
+              <a href="#">081-233-334-808</a>
+            </div>
+          </div>
+          <div class="felx flex-row">
+            <div class="flex flex-wrap lg:flex-nowrap lg:gap-4 p-4">
+              <div class="flex flex-col">
+                <div class="w-64 text-black font-semibold">
+                  <a href="">Our services</a>
+                </div>
+                <div class="text-black mt-4 font-semibold">
+                  <a href="">Why Us</a>
+                </div>
+                <div class="text-black mt-4 font-semibold">
+                  <a href="">Testimonial</a>
+                </div>
+                <div class="text-black mt-4 font-semibold">
+                  <a href="">FAQ</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="flex flex-row">
+              <div class="p-4">
+                Connect with us
+                <div class="flex flex-wrap lg:flex-nowrap gap-4 mt-4">
+                  <div class="text-black font-semibold">
+                    <a href="#">
+                      <img src="/asset/icon_facebook.svg" alt="facebook" />
+                    </a>
+                  </div>
+                  <div class="text-black font-semibold">
+                    <a href="#">
+                      <img src="/asset/icon_instagram.svg" alt="instagram" />
+                    </a>
+                  </div>
+                  <div class="text-black font-semibold">
+                    <a href="#">
+                      <img src="/asset/icon_twitter.svg" alt="twitter" />
+                    </a>
+                  </div>
+                  <div class="text-black font-semibold">
+                    <a href="#">
+                      <img src="/asset/icon_twitch.svg" alt="twich" />
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="flex flex-row">
+              <div class="p-4">
+                Copyright Binar 2022
+                <div class="flex flex-wrap lg:flex-nowrap gap-4 mt-4">
+                  <div class="text-black">
+                    <a href="#">
+                      <img src="/asset/logo.png" alt="facebook" class="h-8 mr-3" />
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Script JS -->
+    <script src="/script.js"></script>
+    <!-- Script JS -->
+    <!-- Scrip Flowbite -->
+    <script src="./node_modules/flowbite/dist/flowbite.js"></script>
+    <!-- Scrip Flowbite -->
+  </body>
+</html>
